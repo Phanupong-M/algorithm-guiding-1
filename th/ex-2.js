@@ -1,8 +1,8 @@
 const romanToInt = function (s) {
-  romanNumber = {I: 1, V:5, X:10, L: 50, C: 100, D: 500, M: 1000}
-  cur_value = 0
-  prev_value = 0
-  sum = 0
+  const romanNumber = {I: 1, V:5, X:10, L: 50, C: 100, D: 500, M: 1000}
+  let cur_value = 0
+  let prev_value = 0
+  let sum = 0
 
     for (i = s.length-1; i >= 0; i--){
         cur_value = romanNumber[s[i]]
@@ -14,7 +14,7 @@ const romanToInt = function (s) {
         }
     prev_value = cur_value
   }
-  
+
   return sum
 }
 
